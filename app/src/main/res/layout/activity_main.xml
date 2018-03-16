@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sukanya.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/drawable_shape"
+            android:fontFamily="casual"
+            android:text="   My favorite food"
+            android:textColor="#F5B041"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.018" />
+    <TextView
+        android:id="@+id/tx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAPAYA SALAD"
+        android:layout_below="@+id/textView"
+        android:background="#D98880"
+        android:textColor="#000"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/a"
+            android:layout_below="@id/tx2"
+            />
+        <TextView
+            android:id="@+id/tx3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ส้มตำกำเนิดที่ประเทศใดบ้าง"
+            android:layout_below="@id/im"
+            android:background="#EC7063  "
+            android:textSize="20sp"
+            />
+        <CheckBox
+            android:id="@+id/checkbox_thai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onCheckboxClicked"
+            android:text="ไทย"
+            android:layout_below="@id/tx3"/>
+        <CheckBox
+            android:id="@+id/checkbox_jeen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="จีน"
+            android:layout_below="@id/checkbox_thai"/>
+        <CheckBox
+            android:id="@+id/checkbox_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="ลาว"
+            android:layout_below="@id/checkbox_jeen"/>
+
+
+   <TextView
+       android:id="@+id/tx4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="ข้อใดไม่ใช่ส่วนประกอบในการทำส้มตำ"
+       android:layout_below="@id/checkbox_low"
+       android:textSize="20sp"
+       android:textColor="#000"
+       android:background="#F5CBA7"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx4">
+
+            <RadioButton
+                android:id="@+id/radio_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="มะละกอดิบ"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="กระเทียม" />
+            <RadioButton
+                android:id="@+id/radio_r3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="พริกขี้หนู" />
+            <RadioButton
+                android:id="@+id/radio_r4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="มะเขือเทศ" />
+            <RadioButton
+                android:id="@+id/radio_r5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="ถั่วงอก" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+
+</ScrollView>
